@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <script src = "js/myScript.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>W.H.</title>
+
+    <script>
+
+
+    </script>
+</head>
+<style>
+body{
+  background-image:url("images/fullimage.jpg");
+}
+
+
+.hide {
+    height: 0;
+}
+
+.show {
+    height: 131px;
+    /* opacity: 1; */
+}
+
+/* .show {
+  position: absolute;
+  overflow: hidden;
+  width: 40%; 
+  height: 131x; 
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.4s ease-in-out;
+} */
+
+</style>
+<body>
+
+<!-- ///////////////////////first slide////////////////////////////// -->
+    <div id ="cover">
+        <div >
+            <img class = "logo" src="images/instagram_profile_image.png" >
+        </div>
+
+        <div class = "container">
+            <a class = "welcome">WELCOME TO W.H.</a>
+            <img src=images/small.png alt="HERE" class = "hexagon"> 
+            <img onclick="hidecover()" src=images/play-button-cyan-circle-line.png alt="PLAYBUTTON" class = "playbutton"> 
+        </div>
+        <iframe style="display:none" width="560" height="315" src="https://www.youtube.com/embed/jshE24f4wZU?autoplay=1&start=5&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+<!-- ///////////////////////////second slide /////////////////////////// -->
+    <div id="secondpage">
+        <div class="container1" id = "container1">
+            <div class="quote" id="quote">   
+                    <p1> 
+                        Because the world is so full of death and horror,
+                        I try again and again to console my heart 
+                        and pick the flowers that grow in the midst of hell. 
+                        
+                    </p1> 
+        
+            </div>
+
+            <div class = "rose_ease">
+                <div>
+                    <img class ="rose" onclick="slidedown();setTimeout(slideup,1000)" src="images/Roses/whiteRose0.png" class="roses">
+                </div>
+            </div>
+
+
+
+        </div> 
+
+        <div class = "container2" id = "container2">
+
+                <p2> 
+                    Because the world is so full of death and horror,
+                    I try again and again to console my heart 
+                    and pick the flowers that grow in the midst of hell. 
+                          
+                </p2> 
+
+        </div>
+
+
+
+        
+    </div>
+
+
+
+
+</body>
+</html>
