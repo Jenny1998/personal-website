@@ -1,4 +1,5 @@
 
+
 function hidecover() {
     console.log("clicked!!");
     var cover = document.getElementById('cover');
@@ -16,7 +17,9 @@ element.classList.toggle('hide');
 }
 
 function slideup(){
-var another_container = document.getElementById("container2");
+var another_container = document.getElementById("container3");
 another_container.classList.toggle('show');
 // another_container.style.display="block";
 }
+
+

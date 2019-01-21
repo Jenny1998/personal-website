@@ -14,17 +14,20 @@
 
 }
 
-.container2{
-  color: darkblue;
-  /* opacity: 0; */
+/* .container2{
+  display : none;
   position: absolute;
-  overflow: hidden;
-  top: 45%;
-  left: 50%;
-  height: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
   transform: translate(-50%,-50%);
   transition: all 0.4s ease-in-out;
-}
+
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+} */
 
 
 
