@@ -1,5 +1,4 @@
 
-
 function hidecover() {
     console.log("clicked!!");
     var cover = document.getElementById('cover');
@@ -21,5 +20,3 @@ var another_container = document.getElementById("container3");
 another_container.classList.toggle('show');
 // another_container.style.display="block";
 }
-
-
