@@ -15,7 +15,9 @@
 </head>
 <style>
 body{
-  background-image:url("images/backgroundimage.jpg");
+  background: black;
+  /* background-image:url("images/backgroundimage.jpg"); */
+  /* opacity: 0.3; */
 }
 
 
@@ -52,7 +54,12 @@ body{
 
         <div class = "container">
             <a class = "welcome">WELCOME TO W.H.</a>
-            <img src=images/small.png alt="HERE" class = "hexagon"> 
+            
+            <div class = "hex">
+              <img src=images/small.png alt="HERE" class = "hexagon"> 
+            </div>
+
+
             <img onclick="hidecover()" src=images/play-button-cyan-circle-line.png alt="PLAYBUTTON" class = "playbutton"> 
         </div>
         <iframe style="display:none" src="soundtracks/never-exxxtentacion.mp3?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -62,6 +69,9 @@ body{
 
 <!-- ///////////////////////////second slide /////////////////////////// -->
     <div id="secondpage">
+        <div class="stars" id = "stars"></div>
+        <div class="twinkling" id = "twinkling"></div>
+
         <div class="container1" id = "container1">
             <div class="quote" id="quote">   
                     <p1> 
@@ -89,11 +99,7 @@ body{
 <body>
   
     <div class='container3' id = "container3">
-    <header>
-      <h1 class = 'title' >help yourself</h1>
-  
-  
-    </header>
+    <div class = 'whiteline'>    </div>
     <main>
       <div class='items'>
   
@@ -106,14 +112,14 @@ body{
               </clipPath>
             </defs>
             <text class='svg-text' dy='.3em' x='50%' y='50%'>
-              soundtracks 
+              Falling Objects 
             </text>
             <g clip-path='url(#clip-0)'>
                 <!-- <a href="interests/soundtracks.html" target="_blank"> -->
                     <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='images/rihanna.png'></image>
                   <!-- </a>  -->
               <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-                soundtracks
+                Falling Objects
               </text>
             </g>
           </svg>

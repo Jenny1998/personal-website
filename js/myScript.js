@@ -11,8 +11,14 @@ function hidecover() {
 
 
 function slidedown() {
-var element = document.getElementById("container1");
-element.classList.toggle('hide');
+var element1 = document.getElementById("container1");
+element1.classList.toggle('hide');
+var element2 = document.getElementById("stars");
+element2.classList.toggle('hide');
+
+var element3 = document.getElementById("twinkling");
+element3.classList.toggle('hide');
+
 }
 
 function slideup(){
