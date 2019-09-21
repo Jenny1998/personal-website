@@ -17,6 +17,7 @@
 
 }
 
+
 /* .container2{
   display : none;
   position: absolute;
@@ -31,7 +32,6 @@
   margin: 0 auto;
   padding: 4rem 2rem;
 } */
-
 
 
 .rose_ease{
@@ -58,6 +58,7 @@
   top: 20%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: darkcyan;
+  font-size: 120%;
 }
 
 .intro {
@@ -74,10 +75,10 @@
 
 .hexagon{
   position: absolute;
-  left:1.7in;
+  left:2in;
   top:-13px;
-  height:39px;
-  width:35.25px;
+  height: 46px;
+  width: 42.25px;
   opacity : 1; 
   animation:fadein_afterdelay 5s 1,spin 3s linear infinite;
   -moz-animation:fadein_afterdelay 5s 1,spin 3s linear infinite;
@@ -92,13 +93,13 @@
 
 .playbutton{
   position: absolute;
-  left:1.7in;
-  top:-13px;
-  height:39px;
-  width:35.25px;
+  left: 2in;
+  top: -13px;
+  height: 46px;
+  width: 40.25px;
   opacity: 0;
-  transition:  1s ease;
-  animation:playbutton_delay 4s; 
+  transition: 1s ease;
+  animation: playbutton_delay 4s;
 }
 
 .playbutton:hover {
@@ -106,38 +107,166 @@
 }
 
 .container{
-  position: absolute; 
+  position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-25%,-25%)
+  width: 20%;
+  transform: translate(-35%,-25%);
 }
 
-.container3{
 
+.container3{
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  z-index: 10;
+  display: none;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
 .whiteline{
-
     margin: auto;
     margin-top: 5%;
     background: rgb(160, 152, 152);
     width: 85%;
     height: 3px;
-
-}
-.items{
-    padding-top: 7%;
 }
 
+.dots{
+  position: absolute; 
+  top: 300px;
+  left: 50%;
+  width: auto; 
+  overflow: hidden;
+  transform: translate(-50%,0px);
+  /*background: rgb(235, 229, 229);*/
+  height: 230px;
+}
+
+.dot-c {
+  margin: 0px;
+  float: left;
+  height: 230px;
+  width: 60px;
+  background-color: rgba(0,0,0,.01);
+}
+.dot{
+  position: relative;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%,0px);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+}
+
+.rain{
+
+  opacity: 0.4; 
+  position: relative;
+}
+
+
+/* //////////////////////// */
+
+
+body{
+  background-color: #75DAF1;
+}
+.wrapper{
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+.drop{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 70px;
+  left: 25px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow:  inset 0 0 10px rgba(64,145,148,0.5);
+  border-left: 5px solid rgba(227,246,249,0.5) ;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  background: -webkit-radial-gradient(top right,rgba(248, 255, 255,1), rgba(254, 213, 230,0.1)10%, rgba(188, 249, 249,1), rgba(59, 218, 188,0.8), rgba(59, 196, 218,0.9), rgba(227, 246, 249,1));
+  background: -o-radial-gradient(rgba(248, 255, 255,1), rgba(254, 213, 230,0.1)10%, rgba(188, 249, 249,1), rgba(59, 218, 188,1), rgba(59, 196, 218,0.9), rgba(227, 246, 249,1)); 
+  background: -moz-radial-gradient(rgba(248, 255, 255,1), rgba(254, 213, 230,0.1)10%, rgba(188, 249, 249,1), rgba(59, 218, 188,1), rgba(59, 196, 218,0.9), rgba(227, 246, 249,1)); 
+  background: radial-gradient(at top right,rgba(248, 255, 255,1), rgba(254, 213, 230,0.1)10%, rgba(188, 249, 249,1), rgba(59, 218, 188,0.8), rgba(59, 196, 218,0.9), rgba(227, 246, 249,1)); 
+}
+.light{
+  width: 40px;
+  height: 30px;
+  position: relative;
+  top: 25px;
+  left: 90px;
+  background-color: rgba(127,222,237,1);
+  border-radius: 50%;
+  box-shadow: -1px -1px 10px rgb(127,222,237);
+}
+.light2{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -70px;
+  left: 80px;
+  border-radius: 50%;
+  background-color: rgba(155, 242, 236,0.2);
+}
+.light3{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -2px;
+  left: 105px;
+  border-radius: 50%;
+  background-color: rgba(250,250,250,0.4);
+  box-shadow: -3px 10px 1px rgba(59,218, 188,0.4) ;
+}
+
+
+/*@keyframes wavy-loader {
+  0%    { top: 2px; }
+  1%    { top: 4px; }
+  2%    { top:6px; }
+  3%    { top:8px; }
+  4%    { top: 10px; }
+  5%    { top:12px; opacity: 1; }
+  6%    { top: -2px; opacity: 1; }
+  7%    { top: -4px; opacity: 1; }
+  8%    { top: -6px; opacity: 1; }
+  9%    { top: -8px; opacity: 1; }
+  10%   { top: -10px; opacity: 1; }
+  11%   { top: -12px; opacity: 1; }
+  12%   { top: 0; opacity: .5; }
+  100%  { top: 0; opacity: .5; }
+}*/
+
+.walkingman{
+
+  /* display: none;  */
+}
 .welcome{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 100%;
   color: darkcyan;
   opacity: 1;
   animation: fadein_afterdelay;
   animation-duration: 3s;
   vertical-align: 11px;
-  padding-right: 10px
+  padding-right: 10px;
+  font-size: 120%;
 }
 
 .title{
@@ -148,16 +277,22 @@
 }
 
 .logo {
-    width: 243px; 
-    height: 243px;
-    position: fixed;
-    left: 50%;
-    top: 38%;
-    opacity: 0;
-    animation: fadein_withdelay;
-    animation-duration: 3s;
+  width: 243px;
+  height: 243px;
+  position: fixed;
+  left: 45%;
+  top: 42%;
+  opacity: 0;
+  animation: fadein_withdelay;
+  animation-duration: 3s;
 }
 
+
+@keyframes centerDots{
+  100% { -webkit-transform: translate(100px,100px);}
+
+  /* 100% {transform: translate(-50%, -50%);} */
+}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -174,6 +309,11 @@
 @keyframes rotateback{ 
   from{transform:rotate(10deg)}
   to{transform:rotate(0deg)}
+}
+
+
+@keyframes riseup{
+  100% { -webkit-transform: translate(100px,100px);}
 }
 
 @keyframes rose_delay{
@@ -234,16 +374,18 @@
 
 @keyframes fadein_withdelay{
   0%   {
-    width: 243px; 
+    width: 244px; 
     height: 240px;
+    left:45%; 
+    top:42%;
     opacity:0
 }
 
   25%   {
     width: 240px; 
     height: 240px;
-    left:40%; 
-    top:38%;
+    left:45%; 
+    top:42%;
     position: fixed;
     opacity:0
   }
@@ -251,8 +393,8 @@
   50%   {
     width: 240px; 
     height: 240px;
-    left:40%; 
-    top:38%;
+    left:45%; 
+    top:42%;
     position: fixed;
     opacity:1
   }
@@ -261,7 +403,7 @@
     height: 240px;
     position: fixed;
     left:10%; 
-    top:38%;
+    top:42%;
     opacity:0.8
   }
   100%{
@@ -269,7 +411,7 @@
     height: 240px;
     position: fixed;
     left:10%; 
-    top:38%;
+    top:42%;
     opacity:0
   }
 }
@@ -342,6 +484,8 @@ header a, a:visited {
   from {background-position:0 0;}
   to {background-position:-10000px 5000px;}
 }
+
+
 
 .stars, .twinkling {
 position:absolute;

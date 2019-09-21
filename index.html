@@ -2,24 +2,25 @@
 <html lang="en" >
 
 <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     <script src = "js/myScript.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
     <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <title>W.H.</title>
 
 </head>
 <style>
 body{
   background: black;
-  /* background-image:url("images/backgroundimage.jpg"); */
-  /* opacity: 0.3; */
 }
-
 
 .hide {
     height: 0;
@@ -53,7 +54,7 @@ body{
         </div>
 
         <div class = "container">
-            <a class = "welcome">WELCOME TO W.H.</a>
+            <p class = "welcome">WELCOME TO W.H.</p>
             
             <div class = "hex">
               <img src=images/small.png alt="HERE" class = "hexagon"> 
@@ -96,167 +97,21 @@ body{
     </div>
 <!-- /////////////////////third slide///////////////////////////// -->
       
-<body>
+<div>
   
     <div class='container3' id = "container3">
-    <div class = 'whiteline'>    </div>
-    <main>
-      <div class='items'>
-  
-  
-        <div class='item'>
-          <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-            <defs>
-              <clipPath id='clip-0'>
-                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-              </clipPath>
-            </defs>
-            <text class='svg-text' dy='.3em' x='50%' y='50%'>
-              Falling Objects 
-            </text>
-            <g clip-path='url(#clip-0)'>
-                <!-- <a href="interests/soundtracks.html" target="_blank"> -->
-                    <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='images/rihanna.png'></image>
-                  <!-- </a>  -->
-              <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-                Falling Objects
-              </text>
-            </g>
-          </svg>
-        </div>
-  
-  
-  
-        <div class='item'>
-          <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-            <defs>
-              <clipPath id='clip-1'>
-                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-              </clipPath>
-            </defs>
-            <text class='svg-text' dy='.3em' x='50%' y='50%'>
-              places
-            </text>
-            <g clip-path='url(#clip-1)'>
-              <!-- <a href="interests/places.html" target="_blank"> -->
-                  <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='images/aurora.png'></image>
-                <!-- </a>  -->
-              <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-                places
-              </text>
-            </g>
-          </svg>
-        </div>
-  
-  
-        <div class='item'>
-          <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-            <defs>
-              <clipPath id='clip-2'>
-                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-              </clipPath>
-            </defs>       
-            <text class='svg-text' dy='.3em' x='50%' y='50%'>
-              movies
-            </text>
-            <g clip-path='url(#clip-2)'>
-              <!-- <a href="interests/movies.html" target="_blank"> -->
-                <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='images/movies.png'></image>
-              <!-- </a>  -->
-                  <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-                    movies
-                  </text>  
-            </g>
-          </svg>
-        </div>
-  
-  
-  
-        <div class='item'>
-          <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-            <defs>
-              <clipPath id='clip-3'>
-                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-              </clipPath>
-            </defs>
-            <text class='svg-text' dy='.3em' x='50%' y='50%'>
-              books
-            </text>
-            <g clip-path='url(#clip-3)'>
-              <!-- <a href="interests/books.html" target="_blank"> -->
-                  <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='images/books.png'></image>
-              <!-- </a>  -->
-              <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-                books
-              </text>
-            </g>
-          </svg>
-        </div>
-  
-        <div class='item'>
-          <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-            <defs>
-              <clipPath id='clip-4'>
-                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-              </clipPath>
-            </defs>
-            <text id = 'resume' class='svg-text' dy='.3em' x='50%' y='50%'>
-              resume
-            </text>
-            <g clip-path='url(#clip-4)'>
-              <a href="documents/Resume_Han WANG.pdf" target="_blank">
-                <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-v2.png'></image>
-              </a>  
-                  <text id = 'resume2' class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-                    resume
-                  </text>
-            </g>
-          </svg>
-        </div>
-  
-  
-  
-        <div class='item'>
-          <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-            <defs>
-              <clipPath id='clip-5'>
-                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-              </clipPath>
-            </defs>
-            <text class='svg-text' dy='.3em' x='50%' y='50%'>
-              timer
-            </text>
-            <g clip-path='url(#clip-5)'>
-              <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-v.png'></image>
-              <text id = "timertext" class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-              timer
-              </text>
-              
-            </g>
-          </svg>
-        </div>
-  
-        
-  
-      </div>
-    </main>
-  </div>
-  
-  
-  
-  <!-- <div class='options'>
-    <button class='dark'></button>
-    <button class='light'></button>
-  </div> -->
-  
-  
-    <script  src="js/index.js"></script>
-  
     
-  </body>
+    
+    
+        <!-- <div class = 'whiteline'></div> -->
+    <!-- <div class = 'dots'></div> -->
 
-
-
+      <!-- <div class="drop"></div>
+      <div class="light"></div>
+      <div class="light2"></div>
+      <div class="light3"></div> -->
+    
+  </div>
 
 </body>
 </html>

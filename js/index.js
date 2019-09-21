@@ -1,8 +1,3 @@
-/*
- * Noel Delgado | @pixelia_me
- */
-
-
 
 
 // Set the date we're counting down to
@@ -11,13 +6,16 @@ var countDownDate = new Date("Jan 10, 1998 15:37:25").getTime();
 
 var d = new Date();
 d = d.toLocaleDateString("en-US");
+
+
 document.getElementById("resume").innerHTML = "resume on "+d;
 document.getElementById("resume2").innerHTML = "resume on "+d;
 
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var x = setInterval(count,1000);
 
+function count() {
   // Get todays date and time
   var now = new Date().getTime();
     
@@ -29,18 +27,22 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var years = Math.floor(days / 365);
+
     
   // Output the result in an element with id="demo"
   document.getElementById("timertext").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timertext").innerHTML = "EXPIRED";
-  }
-}, 1000);
+  + minutes + "m " + seconds; 
 
+  document.getElementById("age").innerHTML = years + " y/o";
+
+  // If the count down is over, write some text 
+
+  if (years >= 100) {
+    clearInterval(x);
+    document.getElementById("timertext").innerHTML = "probably dead, sorry. ";
+  }
+}
  
 var items = []
   , point = document.querySelector('svg').createSVGPoint();
