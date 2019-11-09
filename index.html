@@ -1,117 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      charset="UTF-8"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
 
-<head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-    <script src = "js/myScript.js"></script>
-
-    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
     <title>W.H.</title>
+  </head>
+  <style>
+    body {
+      background: black;
+    }
 
-</head>
-<style>
-body{
-  background: black;
-}
+    .hide {
+      height: 0;
+    }
 
-.hide {
-    height: 0;
-}
+    .show {
+      -webkit-animation: fadeIn 2s;
+      animation: fadeIn 2s;
+      display: block;
+      /* height: 100%; */
+    }
 
-.show {
-    -webkit-animation: fadeIn 2s;
-    animation: fadeIn 2s;
-    display: block;
-    /* height: 100%; */
-}
-
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}  
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-
-
-
-</style>
-<body>
-
-<!-- ///////////////////////first slide////////////////////////////// -->
-    <div id ="cover">
-        <div >
-            <img class = "logo" src="images/instagram_profile_image.png" >
-        </div>
-
-        <div class = "container">
-            <p class = "welcome">WELCOME TO W.H.</p>
-            
-            <div class = "hex">
-              <img src=images/small.png alt="HERE" class = "hexagon"> 
-            </div>
-
-
-            <img onclick="hidecover()" src=images/play-button-cyan-circle-line.png alt="PLAYBUTTON" class = "playbutton"> 
-        </div>
-        <iframe style="display:none" src="soundtracks/never-exxxtentacion.mp3?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <!-- ///////////////////////first slide////////////////////////////// -->
+    <div id="cover">
+      <div>
+        <img class="logo" src="images/instagram_profile_image.png" />
       </div>
 
+      <div class="container">
+        <p class="welcome">WELCOME.</p>
 
+        <div class="hex">
+          <img src=images/small.png alt="HERE" class = "hexagon">
+        </div>
 
-<!-- ///////////////////////////second slide /////////////////////////// -->
-    <div id="secondpage">
-        <div class="stars" id = "stars"></div>
-        <div class="twinkling" id = "twinkling"></div>
-
-        <div class="container1" id = "container1">
-            <div class="quote" id="quote">   
-                    <p1> 
-                        Because the world is so full of death and horror,
-                        I try again and again to console my heart 
-                        and pick the flowers that grow in the midst of hell. 
-                        
-                    </p1> 
-        
-            </div>
-
-            <div class = "rose_ease">
-                <div>
-                    <img class ="rose" onclick="slidedown();setTimeout(slideup,1000)" src="images/Roses/whiteRose0.png" class="roses">
-                </div>
-            </div>
-
-
-
-        </div> 
-
+        <img onclick="hidecover()" src=images/play-button-cyan-circle-line.png
+        alt="PLAYBUTTON" class = "playbutton">
+      </div>
     </div>
-<!-- /////////////////////third slide///////////////////////////// -->
-      
-<div>
-  
-    <div class='container3' id = "container3">
-    
-    
-    
-        <!-- <div class = 'whiteline'></div> -->
-    <!-- <div class = 'dots'></div> -->
 
-      <!-- <div class="drop"></div>
-      <div class="light"></div>
-      <div class="light2"></div>
-      <div class="light3"></div> -->
-    
-  </div>
+    <!-- ///////////////////////////second slide /////////////////////////// -->
+    <div id="secondpage">
+      <div class="stars" id="stars"></div>
+      <div class="twinkling" id="twinkling"></div>
 
-</body>
+      <div class="container1" id="container1">
+        <div class="rose_ease">
+          <div>
+            <img
+              class="rose"
+              onclick="slidedown();setTimeout(slideup,1000)"
+              src="images/Roses/whiteRose0.png"
+              class="roses"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////third slide///////////////////////////// -->
+
+    <div id="container3">
+      <div id="banner"></div>
+      <div>
+        <div class="dots"></div>
+      </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="js/myScript.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
